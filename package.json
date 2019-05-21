@@ -6,8 +6,11 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "Dennis De Roover",
   "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "@hapi/joi": "^15.0.3",
     "bcryptjs": "^2.4.3",

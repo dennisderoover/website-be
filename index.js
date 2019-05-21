@@ -17,4 +17,4 @@ app.use(express.json());
 app.use("/api/user", authRoute);
 app.use("/api/posts", postsRoute);
 
-app.listen(8080, () => console.log("Server Up and Running"));
+app.listen(process.env.PORT, () => console.log("Server Up and Running"));
