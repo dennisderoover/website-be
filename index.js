@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
@@ -13,6 +14,7 @@ mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => consol
 
 // Middleware
 app.use(express.json());
+app.use(cors());
 // Route Middelwares
 app.use("/api/user", authRoute);
 app.use("/api/posts", postsRoute);
